@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  font-size: var(--html-fs);
+}
+body {
+  font-family: var(--ff);
+  font-size: 16px;
+  background: rgb(30, 30, 30);
+}
+.wrapper {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding: 0 20px;
+  background: $-text-white;
+}
+.icon {
+  fill: $-color-nav;
+  transition: var(--transition);
+  @include tablet {
+    fill: $-text-white;
+  }
+}
+.icon:hover {
+  fill: $-background-sign;
+}
+img,
+svg {
+  cursor: pointer;
+}
