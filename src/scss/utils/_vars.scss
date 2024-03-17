@@ -2,10 +2,19 @@
   --font-family: "Lexend", sans-serif;
   --transition: 0.2s all ease-in-out;
 
+  --text-400-71: normal 400 71px / 127% var(--font-family);
+  --text-400-51: normal 400 51px / 127% var(--font-family);
+  --text-400-35: normal 400 35px / 127% var(--font-family);
   --text-400-15: normal 400 15px / 133% var(--font-family);
+  --text-400-20: normal 400 20px / 150% var(--font-family);
+  --text-400-16: normal 400 16px / normal var(--font-family);
+  --text-400-14: normal 400 14px / 150% var(--font-family);
 }
 $-primary: #0b8fed;
 $-text-white: #fff;
 $-border: #eee;
 $-color-nav: #18181b;
+$-color-title: #000;
+$-color-desc: #27272a;
+$-color-btn: #01271c;
 $-background-sign: #4cfdc7;
