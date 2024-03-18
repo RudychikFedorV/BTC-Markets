@@ -28,3 +28,9 @@ img,
 svg {
   cursor: pointer;
 }
+svg {
+  transition: var(--transition);
+  &:hover {
+    scale: 1.2;
+  }
+}

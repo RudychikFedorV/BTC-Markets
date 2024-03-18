@@ -1,0 +1,94 @@
+.popular {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: $-box-shadow-popular;
+  background: $-text-white;
+  &__info {
+    @include f-c-c;
+    gap: 30px;
+    &-desc {
+      font: var(--text-400-14);
+      color: $-color-nav;
+    }
+    &-text {
+      font: var(--text-400-14);
+      color: $-color-text;
+    }
+  }
+  .popular__lines1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    &-desc {
+      font: var(--text-400-14);
+      color: $-color-nav;
+    }
+  }
+  .popular__lines2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    &-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &__name {
+        font: var(--text-400-14);
+        color: $-color-nav;
+      }
+      &__number {
+        font: var(--text-400-14);
+        color: $-color-nav;
+      }
+      &__aud {
+        font: var(--text-400-14);
+        text-transform: uppercase;
+        color: $-color-aud;
+      }
+      &__numbers {
+        font: var(--text-400-16);
+        color: $-color-numbers;
+      }
+      .red {
+        color: $-color-numbersRed;
+      }
+    }
+    &-number {
+      font: var(--text-400-16);
+      color: $-color-nav;
+    }
+    &-btn {
+      @include f-c-c;
+      font: var(--text-400-11);
+      color: $-color-btn;
+
+      border: 1px solid $-background-sign;
+      border-radius: 4px;
+      width: 56px;
+      height: 33px;
+      background: $-background-sign;
+      transition: var(--transition);
+      &:hover {
+        color: $-background-sign;
+        background: $-color-btn;
+      }
+    }
+  }
+  &__icons {
+    padding: 50px 0;
+    @include f-c-c;
+    gap: 20px;
+    &-icon {
+      display: flex;
+      &-1:nth-child(2),
+      &-1:nth-child(3),
+      &-1:nth-child(4) {
+        margin-left: -10px;
+      }
+    }
+    &-desc {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
