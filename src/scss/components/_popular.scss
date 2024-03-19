@@ -3,6 +3,9 @@
   border-radius: 8px;
   box-shadow: $-box-shadow-popular;
   background: $-text-white;
+  @include tablet-small {
+    padding: 0;
+  }
   &__info {
     @include f-c-c;
     gap: 30px;
@@ -21,32 +24,69 @@
     &-desc {
       font: var(--text-400-14);
       color: $-color-nav;
+      @include mobile {
+        span {
+          display: none;
+        }
+      }
     }
   }
   .popular__lines2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
+    @include mobile {
+      
+    }
+    .arrow {
+      @include mobile {
+        display: none;
+      }
+    }
     &-block {
       display: flex;
       align-items: center;
       gap: 10px;
+      @include tablet-small {
+        gap: 5px;
+      }
       &__name {
         font: var(--text-400-14);
         color: $-color-nav;
+        @include tablet-small {
+          font: var(--text-400-11);
+        }
+        @include mobile {
+          display: none;
+        }
       }
       &__number {
         font: var(--text-400-14);
         color: $-color-nav;
+        @include tablet-small {
+          font: var(--text-400-11);
+        }
       }
       &__aud {
         font: var(--text-400-14);
         text-transform: uppercase;
         color: $-color-aud;
+        @include tablet-small {
+          font: var(--text-400-11);
+        }
+        @include mobile {
+          display: none;
+        }
       }
       &__numbers {
         font: var(--text-400-16);
         color: $-color-numbers;
+        @include tablet-small {
+          font: var(--text-400-14);
+        }
+        @include mobile-small {
+          font: var(--text-400-11);
+        }
       }
       .red {
         color: $-color-numbersRed;
@@ -55,6 +95,12 @@
     &-number {
       font: var(--text-400-16);
       color: $-color-nav;
+      @include tablet-small {
+        font: var(--text-400-14);
+      }
+      @include mobile-small {
+        font: var(--text-400-11);
+      }
     }
     &-btn {
       @include f-c-c;
@@ -73,6 +119,7 @@
       }
     }
   }
+
   &__icons {
     padding: 50px 0;
     @include f-c-c;
