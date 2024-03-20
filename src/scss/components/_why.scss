@@ -1,0 +1,41 @@
+.why {
+  &-title {
+    font: var(--text-400-46);
+    text-align: center;
+    color: $-color-title;
+    margin-bottom: 100px;
+    @include mobile {
+      margin-bottom: 50px;
+      font: var(--text-400-35);
+    }
+  }
+  &-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    &__block {
+      max-width: 270px;
+      @include f-c-c;
+      flex-direction: column;
+      gap: 10px;
+      @include mobile {
+        max-width: 400px;
+      }
+      &-desc {
+        font: var(--text-400-20f);
+        text-align: center;
+        color: $-color-nav;
+      }
+      &-txt {
+        font: var(--text-400-16f);
+        text-align: center;
+        color: $-color-desc;
+      }
+    }
+  }
+}

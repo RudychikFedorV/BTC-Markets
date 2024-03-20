@@ -9,6 +9,7 @@
   &__info {
     @include f-c-c;
     gap: 30px;
+    margin-bottom: 20px;
     &-desc {
       font: var(--text-400-14);
       color: $-color-nav;
@@ -21,6 +22,7 @@
   .popular__lines1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 20px;
     &-desc {
       font: var(--text-400-14);
       color: $-color-nav;
@@ -35,6 +37,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
+    margin-bottom: 10px;
     @include mobile {
       
     }
