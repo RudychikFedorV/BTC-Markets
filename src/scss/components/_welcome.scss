@@ -35,6 +35,7 @@
         flex-direction: column;
       }
       &-btn {
+        display: inline-block;
         font: var(--text-400-16);
         color: $-color-btn;
         padding: 5px 15px;
@@ -51,6 +52,7 @@
         }
       }
       &-button {
+        display: inline-block;
         font: var(--text-400-16);
         color: $-color-nav;
         padding: 5px 22px;
