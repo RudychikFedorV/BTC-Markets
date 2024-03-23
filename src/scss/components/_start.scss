@@ -2,6 +2,9 @@
   padding: 100px 0 200px 0;
   @include f-c-c;
   flex-direction: column;
+  @include mobile {
+    padding: 60px 0 80px 0;
+  }
   &-title {
     max-width: 395px;
     font: var(--text-400-48);

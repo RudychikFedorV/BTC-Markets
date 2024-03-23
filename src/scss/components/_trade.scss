@@ -1,0 +1,49 @@
+.trade {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  &-title {
+    font: var(--text-400-46);
+    color: $-color-title;
+    @include mobile {
+      font: var(--text-400-40);
+    }
+    @include mobile-small {
+      font: var(--text-400-30);
+    }
+  }
+  &-desc {
+    max-width: 520px;
+    font: var(--text-400-16f);
+    color: $-color-desc;
+  }
+  &-sections {
+    display: flex;
+    gap: 20px;
+    @include mobile-small {
+      gap: 10px;
+    }
+  }
+  .trade-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    &__block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &-rating {
+        font: var(--text-400-14);
+        color: $-color-desc;
+      }
+    }
+  }
+  &-txt {
+    font: var(--text-400-16);
+    color: $-color-nav;
+    transition: var(--transition);
+    &:hover {
+      color: $-color-numbers;
+    }
+  }
+}
