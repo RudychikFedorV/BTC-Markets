@@ -1,0 +1,97 @@
+.find {
+  @include f-c-c;
+  flex-direction: column;
+  border-top: 1px solid $-color-text;
+  margin: 0 -20px 0 -20px;
+  padding: 100px 20px 0 20px;
+  &-title {
+    font: var(--text-400-31);
+    text-align: center;
+    color: $-color-nav;
+    margin-bottom: 40px;
+  }
+  &-sections {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    &__section {
+      max-width: 350px;
+      box-shadow: $-box-shadow-popular;
+      background: $-text-white;
+      padding: 10px;
+      border-radius: 8px;
+      &-img {
+        margin-bottom: 20px;
+      }
+      &-block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        &__btn {
+          font: var(--text-400-12);
+          color: $-color-nav;
+          padding: 5px 10px;
+          background: $-background-btn;
+          transition: var(--transition);
+          &:hover {
+            color: $-background-sign;
+            background: $-color-nav;
+          }
+        }
+        &__txt {
+          font: var(--text-400-12);
+          text-transform: uppercase;
+          color: $-color-nav;
+        }
+      }
+      &-text {
+        font: var(--text-400-24);
+        color: $-color-nav;
+        margin-bottom: 40px;
+      }
+      .link {
+        padding-top: 28px;
+      }
+      &-link {
+        font: var(--text-400-16f);
+        color: $-color-nav;
+        display: flex;
+        margin-bottom: 10px;
+        transition: var(--transition);
+        &:hover {
+          color: $-background-sign;
+        }
+      }
+    }
+  }
+  &-info {
+    font: var(--text-400-15);
+    text-align: center;
+    color: $-color-nav;
+    margin-bottom: 50px;
+  }
+  &-content {
+    display: flex;
+    gap: 30px;
+    @include tablet-small {
+      gap: 15px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__block {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      &-name {
+        font: var(--text-400-16f);
+        text-align: center;
+        color: $-color-nav;
+      }
+    }
+  }
+}

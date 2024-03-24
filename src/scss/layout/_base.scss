@@ -34,3 +34,10 @@ svg {
     scale: 1.2;
   }
 }
+html._overflow {
+  overflow: hidden;
+
+  body {
+    overflow: hidden;
+  }
+}
