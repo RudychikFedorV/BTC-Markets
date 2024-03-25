@@ -1,3 +1,19 @@
 .footer {
-	padding: 20px;
+  padding: 20px 0;
+  &-desc {
+    font: var(--text-400-12);
+    text-transform: uppercase;
+    color: $-color-desc;
+    margin-bottom: 10px;
+  }
+  &-txt {
+    font: var(--text-400-12);
+    color: $-color-desc;
+    margin-bottom: 50px;
+  }
+  &-info {
+    font: var(--text-400-12);
+    text-align: center;
+    color: $-color-desc;
+  }
 }
